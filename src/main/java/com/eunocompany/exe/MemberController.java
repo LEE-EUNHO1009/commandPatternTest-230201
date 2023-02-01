@@ -93,6 +93,7 @@ public class MemberController extends HttpServlet {
 			service = new JoinService();
 			service.execute(request, response);
 			
+			viewPage = "/login.do";  
 			
 		} else if(command.equals("/loginOk.do")) {
 			
